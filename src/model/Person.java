@@ -1,3 +1,4 @@
+
 package model;
 
 public abstract class Person {
@@ -10,6 +11,7 @@ public abstract class Person {
 
     public Person(int id, String name, int age,
                   String gender, String phone) {
+
         this.id = id;
         this.name = name;
         this.age = age;
@@ -17,6 +19,7 @@ public abstract class Person {
         this.phone = phone;
     }
 
+    // Getters
     public int getId() {
         return id;
     }
@@ -35,5 +38,22 @@ public abstract class Person {
 
     public String getPhone() {
         return phone;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }
